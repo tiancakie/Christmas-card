@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Card</title>
+    <style>
+        body {
+            font-family: 'Arial, sans-serif';
+            background-color: #f2f6fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card-container {
+            text-align: center;
+            padding: 20px;
+            max-width: 600px;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        .open-button {
+            padding: 10px 20px;
+            background-color: #ff4757;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .open-button:hover {
+            background-color: #ff6b81;
+        }
+        .letter {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+            line-height: 1.6;
+        }
+        .letter p {
+            margin: 10px 0;
+        }
+        .footer {
+            margin-top: 20px;
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <h1>🎄 Merry Christmas! 🎄</h1>
+        <button class="open-button" onclick="showLetter()">Open Card</button>
+        <div class="letter" id="letter">
+            <p><strong>Dear JIL - Halifax Families,</strong></p>
+            <p>Warm holiday greetings to you and your loved ones! 🎅✨</p>
+            <p>We, the <strong>Christian Youth for the Nation (CYN)</strong>, are spreading the joy and spirit of Christmas through caroling this holiday season. It would be a delight to visit your home and share the gift of music with your family.</p>
+            <p>Our caroling is not only a celebration of the season but also an opportunity to grow funds for our <strong>CYN Life Group</strong>. These funds will help us continue organizing activities that strengthen faith, build friendships, and inspire growth among the youth in our community.</p>
+            <p>We hope to make your evening extra merry and bright! 🌟</p>
+            <p>Thank you for welcoming us into your home this Christmas season. May your holidays be filled with peace, joy, and love.</p>
+            <p><strong>Merry Christmas and a Happy New Year!</strong> 🎶🎄</p>
+            <p>With gratitude,<br><strong>CYN Lifegroup</strong></p>
+            <div class="footer">
+                <p>To God be the glory!</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showLetter() {
+            document.getElementById('letter').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
